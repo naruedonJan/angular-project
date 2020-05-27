@@ -1,0 +1,29 @@
+<div class="menu" id="menu-con">
+  <div class="row">
+    <div class="col-4" style="text-align: center;">
+      เมนู &nbsp; &nbsp;
+      <i class="fas fa-bars" id="menu-icon" (click)="menuClick()"></i>
+    </div>
+    <div class="col-4" style="text-align: center;">
+      <a [routerLink]="[ '/' ]"><img src="assets/image/logo_feels.png" alt="" width="80px"></a>
+
+    </div>
+    <div class="col-auto item-langue">
+      TH
+    </div>
+    <div class="col-auto item-signin">
+      Sign In
+    </div>
+    <div class="col-auto item-signup">
+      Sign Up
+    </div>
+  </div>
+  <div class="container" id="menu-item" style="padding-top: 15px;">
+    <ul class="menu-list">
+      <li class="list-item"><a [routerLink]="[ '/' ]">หน้าแรก</a> </li>
+      <li class="list-item"><a [routerLink]="[ '/home' ]">เลือกแพ็คเกจ</a> </li>
+      <li class="list-item"><a href="#">เติมเงิน</a> </li>
+      <li class="list-item"><a href="#">เบอร์สวย</a> </li>
+    </ul>
+  </div>
+</div>

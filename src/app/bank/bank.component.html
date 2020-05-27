@@ -1,0 +1,105 @@
+<div style="overflow: hidden; padding-bottom: 50px;">
+    <div class="col-12" style="padding: 0px;">
+        <app-menu></app-menu>
+        <app-slide></app-slide>
+
+        <div class="contact">
+            <div class="row">
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="assets/image/call.png" width="30px" alt=""><br>
+                    <p>Phone: +66(0)2 114 7069</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="assets/image/mail.png" width="30px" alt=""><br>
+                    <p>Mail: support@feels.co.th </p>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="assets/image/Line.png" width="30px" alt=""><br>
+                    <p>Line Official: @feelstelecom</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="color: #3b7e39;">
+            <!-- <div class="col-12">
+                <img src="assets/image/BG_feels.jpg" alt="" width="100%">
+            </div> -->
+            <h3 class="text-center">ช่องทางการชำระเงิน</h3>
+            <div class="payment row">
+                <div class="col-6 col-md-3 text-center">
+                    <input type="radio" name="payment" value="payment_1" id="payment-01" />
+                    <label for="payment-01">
+                        <img src="assets/image/payment/banking.png" alt=""class="image-payment"/>
+                    </label>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <input type="radio" name="payment" value="payment_2" id="payment-02" />
+                    <label for="payment-02">
+                        <img src="assets/image/payment/line-pay.png" alt="" class="image-payment"/>
+                    </label>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <input type="radio" name="payment" value="payment_3" id="payment-03" />
+                    <label for="payment-03">
+                        <img src="assets/image/payment/wechat-pay2.png" alt=""class="image-payment"/>
+                    </label>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <input type="radio" name="payment" value="payment_4" id="payment-04" />
+                    <label for="payment-04">
+                        <img src="assets/image/payment/alipays.png" alt="" class="image-payment"/>
+                    </label>
+                </div>
+            </div>
+
+            <br>
+            <hr style="border-top: 2px solid #3b7e39; width: 70%;">
+
+            <h3 class="text-center">เลือกธนาคาร</h3>
+            <div class="row bank-all" (scroll)="onScroll($event)" id="bank-scroll">
+
+                <div class="col-4 col-md-3 text-center">
+                    <input type="radio" name="bank" value="bank_1" id="bank-01" />
+                    <label for="bank-01">
+                        <img src="assets/image/bank/BAY.png" alt=""class="image-bank"/>
+                    </label>
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <input type="radio" name="bank" value="bank_2" id="bank-02" />
+                    <label for="bank-02">
+                        <img src="assets/image/bank/BBL.png" alt="" class="image-bank"/>
+                    </label>
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <input type="radio" name="bank" value="bank_3" id="bank-03" />
+                    <label for="bank-03">
+                        <img src="assets/image/bank/GSB.png" alt=""class="image-bank"/>
+                    </label>
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <input type="radio" name="bank" value="bank_4" id="bank-04" />
+                    <label for="bank-04">
+                        <img src="assets/image/bank/KBANK.png" alt="" class="image-bank"/>
+                    </label>
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <input type="radio" name="bank" value="bank_5" id="bank-05" />
+                    <label for="bank-05">
+                        <img src="assets/image/bank/KTB.png" alt="" class="image-bank"/>
+                    </label>
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <input type="radio" name="bank" value="bank_6" id="bank-06" />
+                    <label for="bank-06">
+                        <img src="assets/image/bank/SCB.png" alt="" class="image-bank"/>
+                    </label>
+                </div>
+            </div>
+            <i class="fas fa-angle-right" id="slide-right"></i>
+            <i class="fas fa-angle-left" id="slide-left"></i>
+            <br>
+            <br>
+            <button class="btn-confirm" (click)="clickConfirm()">ยืนยันการชำระเงิน</button>
+        </div>
+    </div>
+</div>

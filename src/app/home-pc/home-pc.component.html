@@ -1,0 +1,141 @@
+<div class="row">
+    <div class="col-12 col-lg-8">
+        <div class="input_range text-center" style="margin-bottom : 20px">
+            <label for="rang_slider"> Choose your <b>mobile data (GB)</b> </label>
+            <input (mousedown)="SlideRange(0)" id="rang_slider_0" class="custom-range" type="range" min="0" max="50" [(ngModel)]="range_internet[0]">
+            <span id="value_pop_0"></span>
+            <span id="range-progress_0"></span>
+            <span id="value_slider_0"></span>
+            <div class="row" id="value_gb">
+            <div class="col">
+                0 GB
+            </div>
+            <div class="col">
+                12.5 GB
+            </div>
+            <div class="col">
+                25 GB
+            </div>
+            <div class="col">
+                37.5 GB
+            </div>
+            <div class="col">
+                50 GB
+            </div>
+            </div>
+        </div>
+        <div class="input_range text-center" style="margin-bottom : 20px">
+            <label for="rang_slider"> Choose your internet speed (Mbps) </label>
+            <input (mousedown)="SlideRange(1)" id="rang_slider_1" class="custom-range" type="range" min="0" max="100" [(ngModel)]="range_internet[1]">
+            <span id="value_pop_1"></span>
+            <span id="range-progress_1"></span>
+            <span id="value_slider_1"></span>
+            <div class="row" id="value_mbps">
+            <div class="col">
+                0 Mbps
+            </div>
+            <div class="col">
+                1 Mbps
+            </div>
+            <div class="col">
+                2 Mbps
+            </div>
+            <div class="col">
+                6 Mbps
+            </div>
+            <div class="col">
+                Full Speed
+            </div>
+            </div>
+        </div>
+        <div class="input_range text-center" style="margin-bottom : 20px">
+            <label for="rang_slider"> Choose your mobile voice (mins) </label>
+            <input (mousedown)="SlideRange(2)" id="rang_slider_2" class="custom-range" type="range" min="0" max="500" [(ngModel)]="range_internet[2]">
+            <span id="value_pop_2"></span>
+            <span id="range-progress_2"></span>
+            <span id="value_slider_2"></span>
+            <div class="row" id="value_voice">
+            <div class="col">
+                0
+            </div>
+            <div class="col">
+                125
+            </div>
+            <div class="col">
+                250
+            </div>
+            <div class="col">
+                375
+            </div>
+            <div class="col">
+                500
+            </div>
+            </div>
+        </div>
+        <div class="input_range text-center" style="margin-bottom : 20px">
+            <label for="rang_slider"> Choose your package validity (date) </label>
+            <input (mousedown)="SlideRange(3)" id="rang_slider_3" class="custom-range" type="range" min="0" max="30" [(ngModel)]="range_internet[3]">
+            <span id="value_pop_3"></span>
+            <span id="range-progress_3"></span>
+            <span id="value_slider_3"></span>
+            <div class="row" id="value_date">
+            <div class="col">
+                7
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+                15
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+                30
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+        <div class="card-body price-ondemand">
+          <div class="row">
+            <div class="col">
+              <p>Your package is: </p>
+            </div>
+            <div class="col">
+              <p style="text-align: center;">    </p>
+            </div>
+            <div class="col">
+              <p>Data :</p>
+            </div>
+            <div class="col">
+              <p style="text-align: center;">{{package}} GB</p>
+            </div>
+            <div class="col">
+              <p>Speed : </p>
+            </div>
+            <div class="col">
+              <p style="text-align: center;">{{internet}} Mbps</p>
+            </div>
+            <div class="col">
+              <p>Voice: </p>
+            </div>
+            <div class="col">
+              <p style="text-align: center;">{{voice}} mins</p>
+            </div>
+            <div class="col">
+              <p>Duration: </p>
+            </div>
+            <div class="col">
+              <p style="text-align: center;">{{duration}} days</p>
+            </div>
+
+          </div>
+          <hr style="border-top: 2px solid #3b7e39;">
+          <p style="text-align: center;"> Package Price: {{package_value}} ฿</p>
+          <br>
+
+          <button class="button-ondemand" (click)="clickSubmit()" >ยืนยัน</button>
+        </div>
+    </div>
+</div>

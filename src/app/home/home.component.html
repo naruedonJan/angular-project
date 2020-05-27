@@ -1,0 +1,37 @@
+<div style="overflow: hidden; padding-bottom: 50px;">
+  <div class="col-12" style="padding: 0px;">
+    <app-menu></app-menu>
+    <app-slide></app-slide>
+    <div class="contact">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-center">
+            <img src="assets/image/call.png" width="30px" alt=""><br>
+            <p>Phone: +66(0)2 114 7069</p>
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+          <img src="assets/image/mail.png" width="30px" alt=""><br>
+          <p>Mail: support@feels.co.th </p>
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+          <img src="assets/image/Line.png" width="30px" alt=""><br>
+          <p>Line Official: @feelstelecom</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container" id="ondemand">
+      <h1 class="text-center">Ondemand Packages</h1>
+      <div class="row">
+        <div class="col-12" *ngIf="check_mobile ; else desktop" style="padding: 0px; margin: 0px;">
+          <app-home-mobile class="col-12 row" style="padding: 0px; margin: 0px;"></app-home-mobile>
+
+        </div>
+        <ng-template #desktop>
+          <app-home-pc></app-home-pc>
+        </ng-template>
+        </div>
+    </div>
+  </div>
+</div>

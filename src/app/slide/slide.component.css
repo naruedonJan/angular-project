@@ -1,0 +1,18 @@
+.carousel .carousel-indicators li {
+  border: solid 1px white;
+  background-color: #526d51;
+  width: 10px;
+  height: 10px;
+  border-radius: 50pc;
+}
+li.active {
+  background: #4f9b47 !important;
+}
+
+@media only screen and (min-width:450px){
+  .w-100 {
+    width: 100%!important;
+    height: 500px;
+    object-fit: cover;
+  }
+}
